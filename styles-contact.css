@@ -1,0 +1,286 @@
+/*This is my SSB Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my SSB Contact Web Page Project ------------ */
+
+html, body {
+	height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  background-image: url("images/brown-background.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+	
+	
+}
+
+.container {
+
+	display:flex;
+	border: 10px solid goldenrod;
+	min-height: 100vh;
+	  flex-direction: column;
+	flex-wrap: wrap;
+  
+  
+  }
+  
+.center {
+    width: 50%;
+	min-width: 300px;
+	padding: 2%;
+    margin: 100px auto;
+	background: rgb(189, 142, 72); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+	border: 4px dashed rgb(223, 165, 104);
+	min-height:1000px
+
+}
+
+.center-end {
+    width: 50%;
+	min-width: 300px;
+	padding: 2%;
+    margin: 100px auto;
+	background: rgb(189, 142, 72); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+	border: 4px dashed rgb(223, 165, 104);
+	min-height:100px
+
+}
+   
+#logo {
+	width: 30%;
+    margin-bottom: 20px;
+	margin-top:20px;
+	margin-right:0px;
+	background: rgb(189, 142, 72);
+	max-width:150px;
+	float:left;
+	
+
+}
+
+#logo-end {
+	width: 30%;
+    margin-bottom: 20px;
+	margin-top:20px;
+	margin-right:0px;
+	background: rgb(189, 142, 72);
+	max-width:200px;
+	
+	
+
+}
+
+#image{
+	width: 60%;
+    margin-bottom: 20px;
+	margin-top:20px;
+	justify-content: center;
+	border:10px solid rgb(145, 104, 165) ;
+	max-width: 350px;
+	max-height: 400px
+	
+
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+
+	font-family: "Bebas Neue", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 2em;
+	color: #fff;
+	text-decoration: underline;
+	
+	
+
+	
+}
+
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	 font-family: "Playfair Display", serif;
+ 	 font-size:1.6em;
+ 	 font-weight: 200;
+     line-height: 1.4;
+     color: #fff;
+     padding: 0px 0px;
+     margin: 0px auto 25px auto;
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: "Playwrite PE", cursive;
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+}
+
+
+.float-left {
+	float:left;
+	margin-right: 20px;
+ }
+ 
+ 
+ .text-wrapper {
+	overflow:auto;
+ }
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+	
+
+	h2 {
+		font-size:20px;
+	}
+
+	.main-nav{
+		font-size: 8px;
+	}
+
+
+}
+	@mixin clearfix {
+		&:after {
+		display: table;
+		clear: both;
+		}
+		}
+		html {
+		box-sizing: border-box;
+		
+		}
+		*, *:before, *:after {
+		box-sizing: inherit;
+		}
+		
+		body {
+		background-color: rgb(123, 86, 86);
+		min-height: 100%;
+		
+		}
+		
+		a {
+		text-decoration: none;
+		color: inherit
+		}
+		
+		.main-header {
+		background-color: #7c5a26;
+		padding: 5px 40px 10px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position:fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		}
+
+
+		@media (min-width: 1025px) {
+		.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+			}
+		}
+		
+		.name {
+		color: white;
+		font-size: 1.35em;
+		margin: 0;
+		}
+		a {
+		text-align: center;
+		display: block;
+		padding: 10px 15px;
+		}
+		
+		.main-nav {
+		margin: 0;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-evenly;
+
+		}
+		a {
+		text-align: center;
+		display: inline-block;
+		padding: 10px 15px;
+		font-size: .95em;
+		color:rgb(211, 175, 211);
+		text-transform: uppercase;
+		font-size:1.5em;
+		}
+		a:hover{
+			background:rgb(197, 160, 127);
+			color:rgb(94, 3, 94);
+			font-weight: 500;
+			text-decoration: underline;
+		}
+		
+	
